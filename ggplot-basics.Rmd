@@ -1,6 +1,6 @@
 ---
 title: "Overview of basic features of ggplot"
-author: "Adrien-Koe"
+author: "Adrien Koe"
 date: "`2026-04-21"
 output: html_document
 ---
