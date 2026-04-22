@@ -23,7 +23,7 @@ gapminder
 ```{r 3.4 plot}
 
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp))
-p + geom_smooth() + geom_point()
+p +geom_point()+ geom_smooth()
 
 ```
 
