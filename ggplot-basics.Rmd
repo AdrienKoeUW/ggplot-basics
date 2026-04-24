@@ -20,10 +20,10 @@ gapminder_unfiltered
 ```
 
 
-```{r 3.8 plot}
+```{r 3.9 plot}
 
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp))
-p +geom_point()+ geom_smooth(method = "lm") + scale_x_log10()
+p +geom_point()+ geom_smooth(method = "lm") + scale_x_log10(labels = scale)
 
 ```
 
