@@ -23,7 +23,7 @@ gapminder_unfiltered
 ```{r 3.10 plot}
 
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp, color = "purple"))
-p +geom_point()+ geom_smooth(method = "lm") + scale_x_log10(labels = scale)
+p +geom_point()+ geom_smooth(method = "loess") + scale_x_log10(labels = scales::dollar)
 
 ```
 
