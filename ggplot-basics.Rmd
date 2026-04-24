@@ -18,7 +18,7 @@ Here you will make your figure. You can write a commit for each figure or error 
 gapminder_unfiltered
 
 ```
-
+alpha -0.3
 
 ```{r 3.10 plot}
 
