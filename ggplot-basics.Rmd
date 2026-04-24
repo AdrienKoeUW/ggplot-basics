@@ -19,10 +19,16 @@ gapminder_unfiltered
 
 ```
 
-```{r 3.12 plot}
+```{r 3.13 plot}
 
-p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp))
-p +geom_point(alpha =0.3)+ geom_smooth(method = "loess") + scale_x_log10(labels = scales::dollar)
+p <- ggplot(data = gapminder,
+            mapping = aes(x = gdpPercap, y = lifeExp))
+p + geom_point(alpha = 0.3) +
+    geom_smooth(method = "lm") +
+    scale_x_log10(labels = scales::dollar) +labs(x = "GDP Per Capita", y = "Life Expectancy in Years",
+    title = "Economic Growth and Life Expectancy",
+    subtitle = "Data points are country-years",
+    caption = "Source: Gapminder.")
 
 ```
 
