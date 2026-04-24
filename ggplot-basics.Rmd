@@ -22,8 +22,8 @@ alpha -0.3
 
 ```{r 3.10 plot}
 
-p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp, color = "purple"))
-p +geom_point()+ geom_smooth(method = "loess") + scale_x_log10(labels = scales::dollar)
+p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp))
+p +geom_point(color = "purple")+ geom_smooth(method = "loess") + scale_x_log10(labels = scales::dollar)
 
 ```
 
