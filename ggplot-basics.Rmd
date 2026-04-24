@@ -40,6 +40,14 @@ p <- ggplot(data = gapminder,
 p + geom_smooth()
 ```
 
+figure 3.7
+
+```{r scale log10 plot}
+p <- ggplot(data = gapminder,
+            mapping = aes(x = gdpPercap, y = lifeExp))
+p + geom_point() + geom_smooth(method = "gam") +
+    scale_x_log10()
+```
 
 ### Orignal graph
 
