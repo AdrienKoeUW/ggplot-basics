@@ -60,6 +60,11 @@ p <- ggplot(data = CO2, mapping = aes(x = conc , y= uptake))
 
 p + geom_point(alpha = 0.3) +
     geom_smooth(method = "loess") +
-    scale_x_log10()
+    scale_x_log10() +
+    labs(x = "Ambient CO2 Concentration(mL/L)",
+         y = "carbon dioxide uptake rates (μmol/m^2sec)",
+         title = "CO2 Concentration and Uptake Rate",
+         subtitle = "each of the data points are individual grass plants",
+         caption = "Source: Potvin, Lechowicz, and Tardif (1990)")
 
 ```
