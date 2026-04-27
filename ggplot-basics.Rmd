@@ -56,9 +56,9 @@ view(y)
 
 ```{r original graph}
 
-p <- ggplot(data = CO2, mapping = aes(x = Concentration , y= uptake))
+p <- ggplot(data = CO2, mapping = aes(x = conc , y= uptake))
 
-p + geom_point(mapping = aes(color = continent_colors,fill = continent_colors)) +
+p + geom_point(alpha = 0.3) +
     geom_smooth(method = "loess") 
 
 ```
